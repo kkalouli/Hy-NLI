@@ -1,1 +1,45 @@
-Code coming soon..
+# About
+
+This is Hy-NLI, a hybrid NLI engine, which computes the inference relation between two sentences. It consists of a symbolic componenent, GKR4NLI, and a deep-learning component, a language
+representation model. Each of those two components computes an inference label for a given pair. Based on these labels and on features of semantic nature of the pair, the hybrid
+classifier determines which of the two labels should be trusted for a given pair. Find more details in our paper:
+
+*Kalouli, A.-L., R. Crouch and V. de Paiva. 2020. Hy-NLI: a Hybrid system for Natural Language Inference. In Proceedings of COLING 2020 (link coming soon).*
+
+If you are interested in the explaianability of our system, check out our demo paper:
+
+*Kalouli, A.-L., R. Sevastjanova, R. Crouch, V. de Paiva and M. El-Assady. 2020. XplaiNLI: Explainable Natural Language Inferencethrough Visual Analytics. In Proceedings of COLING 2020 (link coming soon).*
+
+Author/developer: Aikaterini-Lida Kalouli (<aikaterini-lida.kalouli@uni-konstanz.de>) and Richard Crouch (<dick.crouch@gmail.com>)
+
+If you use this software in writing scientific papers, or you use this software in any other medium serving scientists or students (e.g. web-sites,
+CD-ROMs) please include the above citation.
+
+# Demo
+If you would like to have a quick taste of how Hy-NLI looks like, check out our online demo: http://bit.ly/XplaiNLI
+
+
+# License
+Copyright 2020 Aikaterini-Lida Kalouli and Richard Crouch. GKR is a free-software discributed under the conditions of the Apache License 2.0, without warranty. See LICENSE file for more details. You should have received a copy of the LICENSE file with the source code. If not, please visit http://www.apache.org/licenses/ for more information. 
+
+# Installation 
+
+## GKR4NLI, symbolic component
+
+To get the symbolic component working, you need to clone and following the installation instructions of the following repo:
+ ``` git clone https://github.com/kkalouli/GKR4NLI.git ```.
+ 
+ ## Deep-Learning component
+ 
+ For the DL component, we have fine-tuned the BERT (base, uncased) and the XLNet model. The fine-tuned models can be found in the folder dl_component. In the same folder,
+ you can also find the script *get_dl_inference_decision.py* script, which takes as input a pair and uses the fine-tuned models to classify it. You can run the script by
+  ``` python get_dl_inference_decision.py premise hypothesis  ```
+  e.g., ``` python get_dl_inference_decision.py "The dog is walking." "The animal is walking."  ```
+
+
+
+
+
+# Contact
+For troubleshooting, comments, ideas and discussions, please contact aikaterini-lida.kalouli(at)uni-konstanz.de or dick.crouch(at)gmail.com
+
