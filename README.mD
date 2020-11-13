@@ -24,15 +24,27 @@ Copyright 2020 Aikaterini-Lida Kalouli and Richard Crouch. GKR is a free-softwar
 
 # Installation 
 
-## GKR4NLI, symbolic component
+## Symbolic Component: GKR4NLI
 
 To get the symbolic component working, you need to clone and following the installation instructions of the following repo:
  ``` git clone https://github.com/kkalouli/GKR4NLI.git ```.
  
- ## Deep-Learning component
+ ## Deep-Learning Component: BERT/XLNet
  
- For the DL component, we have fine-tuned the BERT (base, uncased) and the XLNet model. The fine-tuned models can be found in the folder dl_component. In the same folder,
- you can also find the script *get_dl_inference_decision.py* script, which takes as input a pair and uses the fine-tuned models to classify it. You can run the script by
+ For the DL component, we have fine-tuned the BERT (base, uncased) and the XLNet model with the HuggingFace implementation. The fine-tuned models can be found in the folder dl_component. In the same folder,
+ you can also find the notebooks *BERT_finetuning_NLI.ipynb* and *XLNet_finetuning_NLI.ipynb*, with which the models were fine-tuned and evaluated (the notebooks were created 
+ based on the informative tutorials by *Chris McCormick and Nick Ryan. (2019, July 22). BERT Fine-Tuning Tutorial with PyTorch. Retrieved from http://www.mccormickml.com*
+ If you want to evaluate a set on our fine-tuned models, follow the instructions in the Section *Load fine-tuned model and evaluate on a given test set* of the notebooks. In the folder
+ dl_component, you can also find the SICK_trial_and_train_set, on which the models were fine-tuned. 
+ 
+ ## Hybrid Component: Hy-NLI
+ 
+ 
+ 
+ 
+ 
+ 
+ which takes as input a pair and uses the fine-tuned models to classify it. You can run the script by
   ``` python get_dl_inference_decision.py premise hypothesis  ```
   e.g., ``` python get_dl_inference_decision.py "The dog is walking." "The animal is walking."  ```
 
