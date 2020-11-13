@@ -47,22 +47,11 @@ To get the symbolic component working, you need to clone and following the insta
  
  2. We run the fine-tuned DL model on *SICK_trial_and_train_set.txt* and collect the predicted labels in the file *SICK_trial_and_train_set_BERT_results.csv.* This file is also used for the further processing. You can find this file within the folder *data/SICK*. You can find the results of the other datasets in the corresponding folders.
  
- 3. We train the hybrid classifier as explained in the notebook *create_hybrid_classifier.ipynb*, found in the folder *hybrid_classifier* and using the two created files:
- *SICK_trial_and_train_set_GKR4NLI_results.csv* and *SICK_trial_and_train_set_BERT_results.csv*. The MLP classifier we have trained can also be found in the folder *hybrid_classifier*.
+3. We use the two created files to train the hybrid classifier as explained in the notebook *create_hybrid_classifier.ipynb*, found in the folder *hybrid_classifier*. The MLP classifier we have trained can also be found in the folder *hybrid_classifier*.
  
- 4. We evaluate the hybrid classifier on a test set as explained in the notebook *create_hybrid_classifier.ipynb*, found in the folder *hybrid_classifier*.
- If you want to evaluate a set on our trained classifier (or reproduce our results), follow the instructions in the Section *Loading the trained classifier and evaluating on it* of the notebook. 
+ ### Evaluating the Classifier
+To evaluate the hybrid classifier on a test set, we follow the instructions explained in the notebook *create_hybrid_classifier.ipynb*. If you want to evaluate a set on our trained classifier (or reproduce our results), follow the instructions in the Section *Loading the trained classifier and evaluating on it* of the notebook. 
  
- 
- 
- 
- which takes as input a pair and uses the fine-tuned models to classify it. You can run the script by typing
-  ``` python get_dl_inference_decision.py premise hypothesis  ```
-  e.g., ``` python get_dl_inference_decision.py "The dog is walking." "The animal is walking."  ```
-
-
-
-
 
 # Contact
 For troubleshooting, comments, ideas and discussions, please contact aikaterini-lida.kalouli(at)uni-konstanz.de or dick.crouch(at)gmail.com
