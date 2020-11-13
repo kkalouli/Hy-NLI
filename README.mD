@@ -35,16 +35,28 @@ To get the symbolic component working, you need to clone and following the insta
  here *https://drive.google.com/file/d/1Fd9rIgvd_T7zvt8pRxuK48lnwRgXmlor/view?usp=sharing* and here *https://drive.google.com/file/d/1RafWCQY_BMF8KRC5MkcLweNXWOd7w1kF/view?usp=sharing*  In the folder *dl_component*,
  you can find the notebooks *BERT_finetuning_NLI.ipynb* and *XLNet_finetuning_NLI.ipynb*, with which the models were fine-tuned and evaluated (the notebooks were created 
  based on the informative tutorials by *Chris McCormick and Nick Ryan. (2019, July 22). BERT Fine-Tuning Tutorial with PyTorch. Retrieved from http://www.mccormickml.com*).
- If you want to evaluate a set on our fine-tuned models, follow the instructions in the Section *Load fine-tuned model and evaluate on a given test set* of the notebooks. In the folder *dl_component*, you can also find the SICK_trial_and_train_set, on which the models were fine-tuned. 
+ If you want to evaluate a set on our fine-tuned models, follow the instructions in the Section *Load fine-tuned model and evaluate on a given test set* of the notebooks. In the folder *dl_component*, you can also find the *SICK_trial_and_train_set.txt*, on which the models were fine-tuned. 
+ 
+ Note that the trained models output 0 for E, 1 for C and 2 for N. 
  
  ## Hybrid Component: Hy-NLI
+ ### Training the Classifier
+ To train the classifier, we first have to bring the training set to the suitable format. For this, we take the following steps:
+ 
+ 1. We run GKR4NLI on our training set. Specifically, we run the main method of *InferenceComputer* on the *SICK_trial_and_train_set.txt*. This outputs two files: *SICK_trial_and_train_set_with_inference_relation.csv* and *SICK_trial_and_train_set_GKR4NLI_results.csv*. The file *SICK_trial_and_train_set_GKR4NLI_results.csv* will be used for the further processing. You can find this file within the folder *data/SICK/*. You can find the results of the other datasets in the corresponding folders.
+ 
+ 2. We run the fine-tuned DL model on *SICK_trial_and_train_set.txt* and collect the predicted labels in the file *SICK_trial_and_train_set_BERT_results.csv.* This file is also used for the further processing. You can find this file within the folder *data/SICK*. You can find the results of the other datasets in the corresponding folders.
+ 
+ 3. We train the hybrid classifier as explained in the notebook *create_hybrid_classifier.ipynb*, found in the folder *hybrid_classifier* and using the two created files:
+ *SICK_trial_and_train_set_GKR4NLI_results.csv* and *SICK_trial_and_train_set_BERT_results.csv*. The MLP classifier we have trained can also be found in the folder *hybrid_classifier*.
+ 
+ 4. We evaluate the hybrid classifier on a test set as explained in the notebook *create_hybrid_classifier.ipynb*, found in the folder *hybrid_classifier*.
+ If you want to evaluate a set on our trained classifier (or reproduce our results), follow the instructions in the Section *Loading the trained classifier and evaluating on it* of the notebook. 
  
  
  
  
- 
- 
- which takes as input a pair and uses the fine-tuned models to classify it. You can run the script by
+ which takes as input a pair and uses the fine-tuned models to classify it. You can run the script by typing
   ``` python get_dl_inference_decision.py premise hypothesis  ```
   e.g., ``` python get_dl_inference_decision.py "The dog is walking." "The animal is walking."  ```
 
