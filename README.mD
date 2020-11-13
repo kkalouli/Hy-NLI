@@ -26,7 +26,7 @@ Copyright 2020 Aikaterini-Lida Kalouli and Richard Crouch. GKR is a free-softwar
 
 ## Symbolic Component: GKR4NLI
 
-To get the symbolic component working, you need to clone and following the installation instructions of the following repo:
+To get the symbolic component working, you need to clone and follow the installation instructions of the following repo:
  ``` git clone https://github.com/kkalouli/GKR4NLI.git ```.
  
  ## Deep-Learning Component: BERT/XLNet
