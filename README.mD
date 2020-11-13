@@ -34,9 +34,8 @@ To get the symbolic component working, you need to clone and following the insta
  For the DL component, we have fine-tuned the BERT (base, uncased) and the XLNet model with the HuggingFace implementation. The fine-tuned models can be downloaded from
  here *https://drive.google.com/file/d/1Fd9rIgvd_T7zvt8pRxuK48lnwRgXmlor/view?usp=sharing* and here *https://drive.google.com/file/d/1RafWCQY_BMF8KRC5MkcLweNXWOd7w1kF/view?usp=sharing*  In the folder *dl_component*,
  you can find the notebooks *BERT_finetuning_NLI.ipynb* and *XLNet_finetuning_NLI.ipynb*, with which the models were fine-tuned and evaluated (the notebooks were created 
- based on the informative tutorials by *Chris McCormick and Nick Ryan. (2019, July 22). BERT Fine-Tuning Tutorial with PyTorch. Retrieved from http://www.mccormickml.com*
- If you want to evaluate a set on our fine-tuned models, follow the instructions in the Section *Load fine-tuned model and evaluate on a given test set* of the notebooks. In the folder
- dl_component, you can also find the SICK_trial_and_train_set, on which the models were fine-tuned. 
+ based on the informative tutorials by *Chris McCormick and Nick Ryan. (2019, July 22). BERT Fine-Tuning Tutorial with PyTorch. Retrieved from http://www.mccormickml.com*).
+ If you want to evaluate a set on our fine-tuned models, follow the instructions in the Section *Load fine-tuned model and evaluate on a given test set* of the notebooks. In the folder *dl_component*, you can also find the SICK_trial_and_train_set, on which the models were fine-tuned. 
  
  ## Hybrid Component: Hy-NLI
  
