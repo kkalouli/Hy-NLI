@@ -41,7 +41,7 @@ To get the symbolic component working, you need to clone and follow the installa
  
  ## Hybrid Component: Hy-NLI
  ### Training the Classifier
- To train the classifier, we first have to bring the training set to the suitable format. For this, we take the following steps:
+ To train the classifier, we first have to bring the training set to the suitable format. For this, we take the following steps: (the steps are described based on the hybridization with BERT, but hybridizing with XLNet follows the same procedure. Just replace all occurrences of 'BERT' with 'XLNet')
  
  1. We run GKR4NLI on our training set. Specifically, we run the main method of *InferenceComputer* on the *SICK_trial_and_train_set.txt*. This outputs two files: *SICK_trial_and_train_set_with_inference_relation.csv* and *SICK_trial_and_train_set_GKR4NLI_results.csv*. The file *SICK_trial_and_train_set_GKR4NLI_results.csv* will be used for the further processing. You can find this file within the folder *data/SICK/*. You can find the results of the other datasets in the corresponding folders.
  
