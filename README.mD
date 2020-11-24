@@ -16,7 +16,7 @@ If you use this software in writing scientific papers, or you use this software 
 CD-ROMs) please include the above citation.
 
 # Demo
-If you would like to have a quick taste of how Hy-NLI looks like, check out our online demo: http://bit.ly/XplaiNLI
+If you would like to have a quick taste of how Hy-NLI looks like, check out our online demo: http://bit.ly/Hy-NLI
 
 
 # License
