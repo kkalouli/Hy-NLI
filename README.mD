@@ -4,11 +4,11 @@ This is Hy-NLI, a hybrid NLI engine, which computes the inference relation betwe
 representation model. Each of those two components computes an inference label for a given pair. Based on these labels and on features of semantic nature of the pair, the hybrid
 classifier determines which of the two labels should be trusted for a given pair. Find more details in our paper:
 
-*Kalouli, A.-L., R. Crouch and V. de Paiva. 2020. Hy-NLI: a Hybrid system for Natural Language Inference. In Proceedings of COLING 2020 (link coming soon).*
+*Kalouli, A.-L., R. Crouch and V. de Paiva. 2020. Hy-NLI: a Hybrid system for Natural Language Inference. In Proceedings of COLING 2020 (https://www.aclweb.org/anthology/2020.coling-main.459/).*
 
 If you are interested in the explaianability of our system, check out our demo paper:
 
-*Kalouli, A.-L., R. Sevastjanova, R. Crouch, V. de Paiva and M. El-Assady. 2020. XplaiNLI: Explainable Natural Language Inferencethrough Visual Analytics. In Proceedings of the COLING 2020 System Demonstrations (link coming soon).*
+*Kalouli, A.-L., R. Sevastjanova, R. Crouch, V. de Paiva and M. El-Assady. 2020. XplaiNLI: Explainable Natural Language Inferencethrough Visual Analytics. In Proceedings of the COLING 2020 System Demonstrations (https://www.aclweb.org/anthology/2020.coling-demos.9/).*
 
 Author/developer: Aikaterini-Lida Kalouli (<aikaterini-lida.kalouli@uni-konstanz.de>) and Richard Crouch (<dick.crouch@gmail.com>)
 
