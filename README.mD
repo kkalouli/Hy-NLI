@@ -6,9 +6,9 @@ classifier determines which of the two labels should be trusted for a given pair
 
 *Kalouli, A.-L., R. Crouch and V. de Paiva. 2020. Hy-NLI: a Hybrid system for Natural Language Inference. In Proceedings of COLING 2020 (https://www.aclweb.org/anthology/2020.coling-main.459/).*
 
-If you are interested in the explaianability of our system, check out our demo paper:
+If you are interested in the explainability of our system, check out our demo paper:
 
-*Kalouli, A.-L., R. Sevastjanova, R. Crouch, V. de Paiva and M. El-Assady. 2020. XplaiNLI: Explainable Natural Language Inferencethrough Visual Analytics. In Proceedings of the COLING 2020 System Demonstrations (https://www.aclweb.org/anthology/2020.coling-demos.9/).*
+*Kalouli, A.-L., R. Sevastjanova, R. Crouch, V. de Paiva and M. El-Assady. 2020. XplaiNLI: Explainable Natural Language Inferencethrough Visual Analytics. In Proceedings of the COLING 2020 System Demonstrations (https://www.aclweb.org/anthology/2020.coling-demos.9/).* and our demo under: http://xplainli.nlitoolkit.de/
 
 Author/developer: Aikaterini-Lida Kalouli (<aikaterini-lida.kalouli@uni-konstanz.de>) and Richard Crouch (<dick.crouch@gmail.com>)
 
@@ -16,7 +16,7 @@ If you use this software in writing scientific papers, or you use this software 
 CD-ROMs) please include the above citation.
 
 # Demo
-If you would like to have a quick taste of how Hy-NLI looks like, check out our online demo: http://bit.ly/Hy-NLI
+If you would like to have a quick taste of how Hy-NLI looks like, check out our online demo: http://hynli.nlitoolkit.de/
 
 
 # License
