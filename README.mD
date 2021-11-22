@@ -54,5 +54,5 @@ To evaluate the hybrid classifier on a test set, we follow the instructions expl
  
 
 # Contact
-For troubleshooting, comments, ideas and discussions, please contact aikaterini-lida.kalouli(at)uni-konstanz.de or dick.crouch(at)gmail.com
+For troubleshooting, comments, ideas and discussions, please contact kalouli(at)cis.lmu.de
 
